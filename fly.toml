@@ -1,15 +1,13 @@
-# fly.toml app configuration file generated for nam1990-xpwaza on 2025-04-26T15:04:09Z
+# fly.toml app configuration file generated for proxy-1-app-young-dawn-646 on 2025-04-27T17:44:44+07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'nam1990-xpwaza'
-primary_region = 'nrt'
-
-[build]
+app = 'proxy-1-app-young-dawn-646'
+primary_region = 'fra'
 
 [http_service]
-  internal_port = 8888
+  internal_port = 8080
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
@@ -20,4 +18,3 @@ primary_region = 'nrt'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024
